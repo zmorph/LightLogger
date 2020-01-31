@@ -200,6 +200,16 @@
 #define ENABLE_LOG_DEBUG
 #endif // BUILD_LOG_LEVEL_ALL
 
+#ifdef BUILD_NO_LOGS_AT_ALL
+#undef ENABLE_LOG_CRITICAL
+#undef ENABLE_LOG_ERROR
+#undef ENABLE_LOG_WARNING
+#undef ENABLE_LOG_INFORMATION
+#undef ENABLE_LOG_VERBOSE
+#undef ENABLE_LOG_DEBUG
+#undef BUILD_LOG_LEVEL_ALL
+#endif
+
 namespace lightlogger {
 
 /*------------------------------------------------------------------------------

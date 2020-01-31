@@ -21,7 +21,7 @@ TEMPLATE = app
 SOURCES  += main.cpp
 HEADERS  += lc_logging.h
 
-DEFINES  += BUILD_LOG_LEVEL_ERROR ENABLE_CODE_LOCATION
+DEFINES  += ENABLE_CODE_LOCATION
 
 windows {
 LIBS     += -lDbghelp
